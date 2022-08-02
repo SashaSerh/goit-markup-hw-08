@@ -7,6 +7,10 @@
   text-transform: uppercase;
 
   color: var(--main-text-color-b);
+
+  @include mq(mobile-only) {
+    text-align: center;
+  }
 }
 .paragraph-h3 {
   font-weight: 400;
