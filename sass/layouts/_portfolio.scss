@@ -1,0 +1,126 @@
+.table-h3-portfolio {
+  margin-bottom: 4px;
+  text-align: center;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-text-color-b);
+}
+
+.list-portfolio__link {
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .paragraph-card,
+  &:focus .paragraph-card {
+    transform: translateY(calc(0%));
+  }
+
+  &:hover ::before,
+  &:focus ::before {
+    transform: translateY(calc(0%));
+  }
+}
+
+.list-portfolio {
+  display: flex;
+  gap: 30px;
+
+  list-style: none;
+  padding: 0;
+
+  z-index: 0;
+
+  &__item {
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      --items: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      --items: 3;
+    }
+  }
+}
+
+.imgcard-prtf {
+  position: relative;
+  overflow: hidden;
+}
+
+.imgcard-prtf::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(calc(-50% + 150%));
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-border {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-top: 1px solid #ececec;
+
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+
+  & > h3,
+  & > p {
+    text-decoration: none;
+
+    text-align: left;
+  }
+}
+
+.paragraph-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 71px 24px;
+  display: inline-block;
+  font-family: "Roboto";
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color-w);
+  transform: translateY(calc(-50% + 150%));
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.paragfaph-card-portfolio {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}

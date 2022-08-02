@@ -1,0 +1,135 @@
+.box-flex {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    margin-bottom: 102px;
+  }
+}
+
+.address {
+  margin-right: 85px;
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    margin: 0%;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
+}
+
+.join {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-text-color-w);
+}
+
+.adress__footer {
+  margin-bottom: 10px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color-w);
+}
+
+.container--footer {
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 100vw;
+  }
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.adress__footer-marg {
+  margin-bottom: 10px;
+}
+
+.footer-flexbox {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer {
+  background-color: var(--background-color-grey);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  display: inline-block;
+
+  margin-bottom: 20px;
+  font-style: normal;
+  font-family: var(--sekondary-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-text-color);
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color-b);
+}
+
+.logo-footer--color {
+  color: var(--main-text-color-w);
+}
+
+.adress__mail-link-footer {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.adress__contact-number-footer {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
