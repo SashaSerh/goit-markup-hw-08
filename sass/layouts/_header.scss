@@ -15,7 +15,7 @@
     color: var(--accent-color);
   }
 
-  @media screen and(max-width: 767px) {
+  @media screen and (max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
 
@@ -114,7 +114,7 @@
     justify-content: flex-end;
   }
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     justify-content: flex-end;
   }

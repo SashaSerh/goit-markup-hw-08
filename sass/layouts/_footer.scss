@@ -7,7 +7,7 @@
     text-align: center;
   }
 
-  @media screen and(min-width: 768px) and(max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 102px;
   }
 }
@@ -15,7 +15,7 @@
 .address {
   margin-right: 85px;
 
-  @media screen and(min-width: 768px) and(max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 0%;
   }
 
@@ -59,7 +59,7 @@
     height: 100vw;
   }
 
-  @media screen and(min-width: 768px) and(max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     justify-content: space-around;
     flex-wrap: wrap;
   }
